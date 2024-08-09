@@ -1,4 +1,4 @@
-var snapVersion = '10.0.1-dev',
+var snapVersion = '10.0.1',
     cacheName = `snap-pwa-${snapVersion}`,
     filesToCache = [
         'snap.html',
@@ -752,7 +752,7 @@ var snapVersion = '10.0.1-dev',
         'Costumes/wizard.svg',
 
         // Backgrounds
-        'Backgrounds/BACKGROUNDS',
+        'Backgrounds/BACKGROUNDS.json',
 
         'Backgrounds/atom_playground.jpg',
         'Backgrounds/bedroom1.gif',
