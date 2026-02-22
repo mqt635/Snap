@@ -112,7 +112,7 @@ ArgLabelMorph, embedMetadataPNG, ArgMorph, RingMorph, InputList, MultiArgMorph*/
 
 // Global stuff ////////////////////////////////////////////////////////
 
-modules.byob = '2026-January-26';
+modules.byob = '2026-February-21';
 
 // Declarations
 
@@ -420,6 +420,7 @@ CustomBlockDefinition.prototype.dropDownMenuOf = function (inputName) {
                         'getVarNamesDict',
                         'pianoKeyboardMenu',
                         'directionDialMenu',
+                        'angleDialMenu',
                         'destinationsMenu',
                         'locationMenu',
                         'typesMenu',
@@ -4172,6 +4173,7 @@ BlockLabelFragment.prototype.hasSpecialMenu = function () {
             '§_getVarNamesDict',
             '§_pianoKeyboardMenu',
             '§_directionDialMenu',
+            '§_angleDialMenu',
             '§_destinationsMenu',
             '§_locationMenu',
             '§_typesMenu',
@@ -5343,6 +5345,7 @@ InputSlotDialogMorph.prototype.specialOptionsMenu = function () {
     addSpecialOptions('variables', '§_getVarNamesDict');
     addSpecialOptions('piano keyboard', '§_pianoKeyboardMenu');
     addSpecialOptions('360° dial', '§_directionDialMenu');
+    addSpecialOptions('360° angles', '§_angleDialMenu');
     menu.addLine();
     addSpecialOptions('destinations', '§_destinationsMenu');
     addSpecialOptions('locations', '§_locationMenu');

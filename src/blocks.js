@@ -162,7 +162,7 @@ CustomHatBlockMorph, GrayPaletteMorph, ZOOM*/
 
 // Global stuff ////////////////////////////////////////////////////////
 
-modules.blocks = '2026-February-13';
+modules.blocks = '2026-February-21';
 
 var SyntaxElementMorph;
 var BlockMorph;
@@ -11376,6 +11376,18 @@ InputSlotMorph.prototype.menuFromDict = function (
        			menu.addLine();
 			    menu.items.push(dial);
             	menu.addLine();
+            } else if (key.indexOf('§_angle') === 0) {
+			    dial = new DialMorph();
+                dial.bearings = 'math';
+    			dial.rootForGrab = function () {return this; };
+    			dial.target = this;
+       			dial.action = update;
+       			dial.fillColor = this.parent.color;
+          		dial.setRadius(this.fontSize * 3);
+				dial.setValue(+this.evaluate(), false, true);
+       			menu.addLine();
+			    menu.items.push(dial);
+            	menu.addLine();
             } else if (key.indexOf('§_') === 0) {
                 // prefixing a key with '§_' only makes the menu item
                 // appear when the user holds down the shift-key
@@ -12268,6 +12280,11 @@ InputSlotMorph.prototype.pianoKeyboardMenu = function (searching) {
 InputSlotMorph.prototype.directionDialMenu = function (searching) {
     if (searching) {return {}; }
     return {'§_dir': null};
+};
+
+InputSlotMorph.prototype.angleDialMenu = function (searching) {
+    if (searching) {return {}; }
+    return {'§_angle': null};
 };
 
 InputSlotMorph.prototype.audioMenu = function (searching) {

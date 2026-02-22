@@ -37,6 +37,7 @@
         * new 'parameter' custom block input type, same as 'upvar', but doesn't add a script variable when evaluated, supports variadicity
         * support for dynamically setting the contents of expanded variadic upvars and input slots by a user script in the block definition
         * support for user-scriptable rename-menus in upvars, including variadic ones (a single menu is repeated in each non-unevaluated slot, a list of menu-lists whose first item is an empty list gets repeated across all subslots)
+        * new "360° angles" dial widget for mathematical bearings (zero is East, counterclockwise) instead of compass bearings
     * files
         * new general "dta_export(data, name, type)" extension (for csv, json, etc.)
         * new general "dta_import(raw?)" extension (for text files, csv, json etc.)
@@ -96,6 +97,9 @@
     * Chinese, thank you, @Ayist14 !
     * Catalan, thanks, Joan!
     * German
+
+### 2026-02-21
+* morphic, blocks, byob: new "360° angles" dial widget for mathematical bearings (zero is East, counterclockwise) instead of compass bearings
 
 ### 2026-02-18
 * gui: added "Blocks only" setting to the "looks" menu - hides the stage and all sprite editing panes for custom "functions-first" microworlds
