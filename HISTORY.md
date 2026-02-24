@@ -52,6 +52,7 @@
         * new reporter version of "let" in the variables declaration extension
         * new "... times ..." reporter in the neural networks library for quantifying results
         * new blocks to load costumes and sounds from a url in the web-services library, thanks, @ego-lay-atman-bay!
+        * new "cst_shrink-wrap(cst)" extension
     * new help screens
         * new help screens for "combinations" and
         * "pipe" reporters, thanks, Brian and gang!
@@ -97,6 +98,9 @@
     * Chinese, thank you, @Ayist14 !
     * Catalan, thanks, Joan!
     * German
+
+### 2026-02-24
+* extensions: new "cst_shrink-wrap(cst)" extension
 
 ### 2026-02-21
 * morphic, blocks, byob: new "360° angles" dial widget for mathematical bearings (zero is East, counterclockwise) instead of compass bearings

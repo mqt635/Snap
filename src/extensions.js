@@ -36,7 +36,7 @@ TableFrameMorph, console, Morph*/
 
 /*jshint esversion: 11, bitwise: false*/
 
-modules.extensions = '2026-February-13';
+modules.extensions = '2026-February-24';
 
 // Global stuff
 
@@ -1424,6 +1424,14 @@ SnapExtensions.primitives.set(
         m.bounds.setHeight(img.height);
         m.cachedImage = img;
         return m;
+    }
+);
+
+SnapExtensions.primitives.set(
+    'cst_shrink-wrap(cst)',
+    function (costume) {
+        costume.shrinkWrap();
+        return costume;
     }
 );
 
