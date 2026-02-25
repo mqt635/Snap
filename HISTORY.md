@@ -99,6 +99,9 @@
     * Catalan, thanks, Joan!
     * German
 
+### 2026-02-25
+* updated neural networks, tables and shapes libraries with new type annotation format (underscore-type string)
+
 ### 2026-02-24
 * extensions: new "cst_shrink-wrap(cst)" extension
 * objects: speed-up for generated costumes, but now need to explicitly shrink-wrap them
