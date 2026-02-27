@@ -108,6 +108,7 @@
 * threads: metaprogramming support for the ADT slot
 * blocks, extensions: enable exporting custom graphical ADT representations from result balloons and speech bubbles
 * British-English translation update
+* updated neural networks, tables and shapes extensions with new ADT input slots
 
 ### 2026-02-26
 * blocks, byob, store: new ADT type input slot
