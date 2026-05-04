@@ -122,6 +122,9 @@
     * Catalan, thanks, Joan!
     * German
 
+### 2026-05-04
+* fixed an occasional race-condition with the open-file dialog, thanks, Michael Aschauer!
+
 ### 2026-04-30
 * morphic, store: new World>>once mechanism for dynamic scheduling used to load projects and apply settings
 * store: fixed including the blocks zoom level in templates and derived projects
